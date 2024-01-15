@@ -11,15 +11,15 @@ def sentence_list_vowl_counter(input_list: list) -> list:
     return result_list
 
 def main():
-  my_input_list = []
+  input_list = []
   while True:
-      my_input_sentence = input().upper()
-      if my_input_sentence != '#':
-          my_input_list.append(my_input_sentence)
+      input_sentence = input().upper()
+      if input_sentence != '#':
+          input_list.append(input_sentence)
       else:
           break
-  my_result_list = sentence_list_vowl_counter(my_input_list)
-  for i in my_result_list:
+  result_list = sentence_list_vowl_counter(input_list)
+  for i in result_list:
       print(i)
 
 main()
