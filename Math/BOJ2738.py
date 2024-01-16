@@ -1,7 +1,6 @@
 N, M = map(int, input().split())
 
 def matrix_sum(matrix_list : list) -> list :
-    global N, M
     matrix = [[0 for _ in range(M)] for _ in range(N)]
     for i in range(len(matrix_list)) :
         for j in range(N) :
