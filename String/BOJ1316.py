@@ -1,28 +1,19 @@
-def group_word_checker(word : str) -> bool :
-    word_set = set()
-    before = word[0]
-    word_set.add(before)
-    
-    for w in range(1, len(word)) :
-        if word[w] not in word_set :
-            word_set.add(word[w])
-            
-            before = word[w]
-            continue
-        
-        if before != word[w] :
+def group_word_checker(word):
+    for j in range(0,len(word)-1):
+        if word[j] != word[j + 1] and word[j] in word[j + 1:]:
             return False
-        
-        before = word[w]
-        
-    return True 
+    return True
 
 def main() : 
     N = int(input())
-    result = 0
-    for _ in range(N) :
-        if group_word_checker(input()) :
-            result += 1
-    print(result)
+    words = [input() for _ in range(N)]
+
+    cnt = N
+    for i in range(N):
+        word = words[i]
+        if not group_word_checker(word):
+            cnt -= 1
+
+    print(cnt)
 
 main()
