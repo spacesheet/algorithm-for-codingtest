@@ -5,13 +5,11 @@ for i in range(N):
     tree[root] = left, right
 
 def pre_trav(center):
-    if center == '.':
-      return
-
-    print(center, end='')
-    pre_trav(tree[center][0])
-    pre_trav(tree[center][1])
-
+    if center != '.':
+        print(center, end='')
+        pre_trav(tree[center][0])
+        pre_trav(tree[center][1])
+        
 def in_trav(center):
     if center != '.':
         in_trav(tree[center][0])
