@@ -19,5 +19,5 @@ def dfs(node):
             dfs(j)
 dfs(1)
 
-for k in range(2,N+1):
+for k in range(2, N+1):
     print(parent[k])
