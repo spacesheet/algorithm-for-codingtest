@@ -4,26 +4,26 @@ for i in range(N):
     root, left, right = map(str, input().split())
     tree[root] = left, right
 
-def pre_trav(center):
+def pre_traversal(center):
     if center != '.':
         print(center, end='')
-        pre_trav(tree[center][0])
-        pre_trav(tree[center][1])
+        pre_traversal(tree[center][0])
+        pre_traversal(tree[center][1])
         
-def in_trav(center):
+def in_traversal(center):
     if center != '.':
-        in_trav(tree[center][0])
+        in_traversal(tree[center][0])
         print(center, end='')
-        in_trav(tree[center][1])
+        in_traversal(tree[center][1])
 
-def post_trav(center):
+def post_traversal(center):
     if center != '.':
-        post_trav(tree[center][0])
-        post_trav(tree[center][1])
+        post_traversal(tree[center][0])
+        post_traversal(tree[center][1])
         print(center, end='')
 
-pre_trav('A')
+pre_traversal('A')
 print()
-in_trav('A')
+in_traversal('A')
 print()
-post_trav('A')
+post_traversal('A')
