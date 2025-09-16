@@ -13,7 +13,7 @@ fn main() {
 
     // 문자열
     let string_data_of_binary: &str = "홍길동"; // static
-    /**
+    /*
      * 단순 배열 포인터 = 주소값 (x)
      * fat pointer (o) 
      */
@@ -23,7 +23,7 @@ fn main() {
         len: usize, // 바이트 길이
     }
 
-    /**
+    /*
      * String vs array of chars
      * 문자열은 UTF-8 로 된 일련의 바이트, 문자의 배열이 아님
      * Unicode 글자가 배열
