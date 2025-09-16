@@ -12,7 +12,7 @@ fn main() {
     let letter: char = 'A';
 
     // 문자열
-    let string_data_of_binary;: &str = "홍길동"; // static
+    let string_data_of_binary: &str = "홍길동"; // static
     /**
      * 단순 배열 포인터 = 주소값 (x)
      * fat pointer (o) 
@@ -61,7 +61,7 @@ fn main() {
     let my_string = String::from("test");
     string_call_by_value(my_string); // my_string 재사용 불가
 
-    fn borrow_string_call_by_ref(s: &String) { }// 빌려오기, &명시적 참조
+    fn borrow_string_call_by_ref(s: &String) { } // 빌려오기, &명시적 참조
     let my_string = String::from("test");
     borrow_string_call_by_ref(&my_string); // my_string 사용 가능, &명시적 참조
 }
