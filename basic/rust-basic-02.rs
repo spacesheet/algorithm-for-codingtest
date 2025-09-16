@@ -59,7 +59,7 @@ fn main() {
 
     fn take_string_call_by_value(s: String) { } // 소유권 이동
     let my_string = String::from("test");
-    string_call_by_value(my_string); // my_string 재사용 불가
+    take_string_call_by_value(my_string); // my_string 재사용 불가
 
     fn borrow_string_call_by_ref(s: &String) { } // 빌려오기, &명시적 참조
     let my_string = String::from("test");
