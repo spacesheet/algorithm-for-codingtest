@@ -11,6 +11,6 @@ fn main() {
 
     // 상수 literal 컴파일 시점에 값이 결정됨
     let x = 42;
-    // x = 43 (x)
-    //let count = get_count(); 런타임 때 값이 결정됨
+    // x = 43 (x) 재할당 불가
+    // let count = get_count(); (x) 런타임 때 값이 결정됨
 }
