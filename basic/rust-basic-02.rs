@@ -54,7 +54,8 @@ fn main() {
         capacity: usize, // 할당된 용량
     }
 
-    //Rust's 소유권 system
+    // Rust's 소유권 system
+    // 소유권 이동이 기본이며, 명시적으로 &을 써야 참조
 
     fn take_string_call_by_value(s: String) { } // 소유권 이동
     let my_string = String::from("test");
