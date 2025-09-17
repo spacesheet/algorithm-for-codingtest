@@ -8,7 +8,7 @@ fn main() {
     // 불린형
     let is_active: bool = true;
 
-    // 문자열
+    // 문자
     let letter: char = 'A';
 
     // 문자열
